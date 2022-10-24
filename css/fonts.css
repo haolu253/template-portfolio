@@ -1,29 +1,50 @@
 @font-face {
-    font-family: 'NexaRegular';
-    src: url('font/NexaRegular.woff2') format('woff2'),
-        url('font/NexaRegular.woff') format('woff'),
-        url('font/NexaRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nexa';
-    src: url('font/Nexa-Bold.woff2') format('woff2'),
-        url('font/Nexa-Bold.woff') format('woff'),
-        url('font/Nexa-Bold.ttf') format('truetype');
+    font-family: 'Kohinoor Bangla';
+    src: url('font/KohinoorBangla-Bold.woff2') format('woff2'),
+        url('font/KohinoorBangla-Bold.woff') format('woff'),
+        url('font/KohinoorBangla-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Nexa';
-    src: url('font/Nexa-Light.woff2') format('woff2'),
-        url('font/Nexa-Light.woff') format('woff'),
-        url('font/Nexa-Light.ttf') format('truetype');
+    font-family: 'Kohinoor Bangla';
+    src: url('font/KohinoorBangla-Light.woff2') format('woff2'),
+        url('font/KohinoorBangla-Light.woff') format('woff'),
+        url('font/KohinoorBangla-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Kohinoor Bangla';
+    src: url('font/KohinoorBangla-Medium.woff2') format('woff2'),
+        url('font/KohinoorBangla-Medium.woff') format('woff'),
+        url('font/KohinoorBangla-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kohinoor Bangla';
+    src: url('font/KohinoorBangla-Regular.woff2') format('woff2'),
+        url('font/KohinoorBangla-Regular.woff') format('woff'),
+        url('font/KohinoorBangla-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kohinoor Bangla';
+    src: url('font/KohinoorBangla-Semibold.woff2') format('woff2'),
+        url('font/KohinoorBangla-Semibold.woff') format('woff'),
+        url('font/KohinoorBangla-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
