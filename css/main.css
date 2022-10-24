@@ -1,58 +1,71 @@
 @import url(/css/fonts.css);
 
 * {
-    margin: 0;
-    scroll-behavior: smooth;
-  }
-  
-  ::-webkit-scrollbar {
-    display: none;
-  }
-  
-  main {
-    position: fixed;
-    top: 0;
-    left: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   /*  note vh and vw switched  */
-    width: 100vh; 
-    height: 100vw;
-    transform-origin: top left;
-    transform: rotate(-90deg) translateX(-100vh);
-    overflow-x: hidden;
-    overflow-y: scroll;
+  width: 100vh;
+  height: 100vw;
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100vh);
+  overflow-x: hidden;
+  overflow-y: scroll;
   /*   scroll-snap-type: y mandatory; */
-  }
-  
-  article {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    height: fit-content;
-    transform-origin: top left;
-    transform: rotate(90deg) translateY(-100vh);
-  }
-  
-  section {
-    width: 100vw;
-    height: 100vh;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  transform-origin: top left;
+  transform: rotate(90deg) translateY(-100vh);
+}
+
+section {
+  width: 70vw;
+  height: 100vh;
   /*   scroll-snap-align: start; */
-    overflow-y: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: monospace;
-    font-size: 3rem;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 3rem;
   /*  backface visibility keeps font from looking weird  */
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  section:nth-of-type(odd) {
-    background: #731d17;
-    color: #fff;
-  }
-  
-  section:nth-of-type(even) {
-    background: rgb(63, 27, 27);
-    color: #fff;
-  }
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+section:nth-of-type(odd) {
+  background: #731d17;
+  color: #fff;
+}
+
+section:nth-of-type(even) {
+  background: rgb(63, 27, 27);
+  color: #fff;
+}
+
+section:nth-of-type(1) {
+  margin-left: 15vw;
+  background-image: url(/img/1.png);
+  background-size: cover;
+}
+
+.side-navbar {
+  position: absolute;
+  width: 15vw;
+  height: 100vh;
+  background-color: white;
+}
