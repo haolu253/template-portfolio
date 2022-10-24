@@ -68,4 +68,5 @@ section:nth-of-type(1) {
   width: 15vw;
   height: 100vh;
   background-color: white;
+  z-index: 99;
 }
