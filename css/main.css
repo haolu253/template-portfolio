@@ -3,6 +3,8 @@
 * {
   margin: 0;
   scroll-behavior: smooth;
+  color: #1E1E1E;
+  letter-spacing: 0.05em;
 }
 
 ::-webkit-scrollbar {
@@ -68,6 +70,16 @@ section:nth-of-type(4) {
   background-size: cover;
 }
 
+section:nth-of-type(6) {
+  background-image: url(../img/5.png);
+  background-size: cover;
+}
+
+section:nth-of-type(8) {
+  background-image: url(../img/6.png);
+  background-size: cover;
+}
+
 .side-navbar {
   position: absolute;
   width: 265px;
@@ -77,20 +89,28 @@ section:nth-of-type(4) {
   padding: 66px 40px;
 }
 
-.side-navbar .top p {
-  margin-bottom: 12px;
+.side-navbar .top li {
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+.side-navbar .top a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.1em;
+  color: #1E1E1E;
 }
 
-.side-navbar .top p:hover,
-.side-navbar .top p.active {
+.side-navbar .top a:hover,
+.side-navbar .top a.active {
   font-weight: 800;
+  text-decoration: none;
 }
 
-.side-navbar .top img {
+.side-navbar .top .side-logo {
   margin-bottom: 9vh;
+  width: 68px;
+  height: 70px;
 }
 
 .side-navbar .footer {
@@ -106,4 +126,52 @@ section:nth-of-type(4) {
 
 .side-navbar .footer img {
   margin-bottom: 20px;
+}
+
+.about-us {
+  width: 420px;
+  font-size: 14px;
+  padding: 6vw 60px;
+}
+
+.content {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.our-team {
+  width: 500px;
+  font-size: 14px;
+  padding: 6vw 60px;
+  position: relative;
+}
+
+.ourteam-logo {
+  position: absolute;
+  top: 3%;
+  right: 0;
+}
+
+.dark-box-content {
+  background: #1E1E1E;
+  color: white;
+  font-size: 14px;
+  width: 396px;
+  height: 230px;
+  margin: 5vw;
+  padding: 62px 37px;
+  border-bottom: 13px solid #D51F26;
+}
+
+.our-clients {
+  width: 855px;
+  padding: 101px 89px;
+}
+
+.our-clients-content {
+  width: 468px;
 }
