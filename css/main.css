@@ -23,6 +23,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   /*   scroll-snap-type: y mandatory; */
+  margin-inline-start: 265px;
 }
 
 .sub-container {
@@ -47,6 +48,7 @@ section {
   /*  backface visibility keeps font from looking weird  */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  scroll-margin-left: 300px;
 }
 
 section:nth-of-type(1) {
@@ -176,6 +178,7 @@ section:nth-of-type(8) {
   width: 468px;
 }
 
-#highlights:target {
-  margin-left: 265px;
+.click-to-go {
+  margin-inline-start: 265px;
+  transition: 1s;
 }
