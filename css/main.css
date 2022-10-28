@@ -48,11 +48,9 @@ section {
   /*  backface visibility keeps font from looking weird  */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  scroll-margin-left: 300px;
 }
 
 section:nth-of-type(1) {
-  margin-left: 265px;
   background-image: url(../img/1.png);
   background-size: cover;
 }
@@ -82,8 +80,17 @@ section:nth-of-type(8) {
   background-size: cover;
 }
 
+section:nth-of-type(8) {
+  background-image: url(../img/6.png);
+  background-size: cover;
+}
+
+section:last-child {
+  margin-right: 265px;
+}
+
 .side-navbar {
-  position: absolute;
+  position: fixed;
   width: 265px;
   height: 100vh;
   background-color: white;
@@ -176,9 +183,4 @@ section:nth-of-type(8) {
 
 .our-clients-content {
   width: 468px;
-}
-
-.click-to-go {
-  margin-inline-start: 265px;
-  transition: 1s;
 }
