@@ -175,3 +175,7 @@ section:nth-of-type(8) {
 .our-clients-content {
   width: 468px;
 }
+
+#highlights:target {
+  margin-left: 265px;
+}
