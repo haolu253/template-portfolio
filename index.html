@@ -8,8 +8,6 @@
     <link rel="icon" href="img/logo.png">
     <title>LEGO</title>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/node_modules/fullpage.js/dist/fullpage.css" />
-    <link rel="stylesheet" href="/node_modules/fullpage.js/dist/fullpage.min.css" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -33,36 +31,88 @@
     <div class="main-container">
         <div class="sub-container">
             <section id="highlights">
+                <img class="gallery" src="./img/1.png" alt="" srcset="">
+                <div class="dark-box-content box-1">
+                    <div class="slideshow-container">
+                        <div class="slideshow slide-1">
+                            <div class="slideshow-content">
+                                <p class="fw-bold">Get your hands on the momentum 1</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere libero,
+                                    a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis.
+                                    Donec consectetur orci non metus placerat, et porta massa cursus.</p>
+                            </div>
+                        </div>
 
+                        <div class="slideshow slide-2">
+                            <div class="slideshow-content">
+                                <p class="fw-bold">Get your hands on the momentum 2</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere libero,
+                                    a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis.
+                                    Donec consectetur orci non metus placerat, et porta massa cursus.</p>
+                            </div>
+                        </div>
+
+                        <div class="slideshow slide-3">
+                            <div class="slideshow-content">
+                                <p class="fw-bold">Get your hands on the momentum 3</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere libero,
+                                    a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis.
+                                    Donec consectetur orci non metus placerat, et porta massa cursus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
             </section>
-            <section></section>
-            <section></section>
-            <section></section>
+            <section>
+                <img class="gallery" src="./img/2.png" alt="" srcset="">
+            </section>
+            <section>
+                <img class="gallery" src="./img/3.png" alt="" srcset="">
+            </section>
+            <section>
+                <img class="gallery" src="./img/4.png" alt="" srcset="">
+            </section>
             <section class="about-us d-flex flex-column justify-content-start align-items-start" id="about-us">
                 <h2 class="fw-bold">About us</h2>
                 <p class="fw-bold mt-5">Get your hands on the momentum</p>
-                <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis. Donec consectetur orci non metus placerat, et porta massa cursus.</p>
+                <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere
+                    libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis. Donec
+                    consectetur orci non metus placerat, et porta massa cursus.</p>
                 <p class="fw-bold mt-5">What we do</p>
                 <p class="content mt-3">Text goes here</p>
                 <p class="content">Text goes here</p>
                 <p class="content">Text goes here</p>
             </section>
-            <section></section>
+            <section>
+                <img class="gallery" src="./img/5.png" alt="" srcset="">
+            </section>
             <section class="our-team d-flex flex-column justify-content-end align-items-start" id="our-team">
                 <img class="ourteam-logo" src="./img/ourteamlogo.png" alt="" srcset="">
                 <h2 class="fw-bold">Our team</h2>
                 <p class="fw-bold mt-5">Get your hands on the momentum</p>
-                <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis. Donec consectetur orci non metus placerat, et porta massa cursus.</p>
+                <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere
+                    libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis. Donec
+                    consectetur orci non metus placerat, et porta massa cursus.</p>
             </section>
             <section class="d-flex justify-content-end align-items-start">
-                <div class="dark-box-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis.
+                <img class="gallery" src="./img/6.png" alt="" srcset="">
+                <div class="dark-box-content box-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere libero, a euismod nisi.
+                    Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis.
                 </div>
             </section>
             <section class="our-clients d-flex flex-column justify-content-between align-items-start">
                 <div class="our-clients-content">
                     <h2 class="fw-bold">Our clients</h2>
-                    <p class="content mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere libero, a euismod nisi.</p>
+                    <p class="content mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere
+                        libero, a euismod nisi.</p>
                 </div>
                 <div class="w-100">
                     <div class="row">
@@ -81,8 +131,6 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/node_modules/fullpage.js/dist/fullpage.min.js"></script>
-    <script src="/node_modules/fullpage.js/dist/fullpage.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
