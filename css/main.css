@@ -125,6 +125,10 @@ section:last-child {
   font-weight: 700;
 }
 
+.fw-thin {
+  font-weight: 400;
+}
+
 .our-team {
   width: 500px;
   font-size: 14px;
@@ -151,10 +155,31 @@ section:last-child {
   height: 326px;
   left: 10%;
   bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+}
+
+.dark-box-content.box-1 p {
+  font-size: 12px;
 }
 
 #highlights {
   position: relative;
+}
+
+.highlights-title {
+  position: absolute;
+  top: 22%;
+  left: 13%;
+  z-index: 2;
+}
+
+.highlights-title p {
+  color: white;
+  line-height: 100px;
+  font-size: 130px;
 }
 
 .dark-box-content.box-2 {

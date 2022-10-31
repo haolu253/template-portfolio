@@ -1,14 +1,28 @@
-const slideshowContent = document.querySelectorAll('#highlights .slideshow')
+let slideIndex = 1;
+showSlides(slideIndex);
 
-const nextSlideDelay = 3000;
-const currentSlide = 0;
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-slideshowContent[currentSlide].style.display = 'block';
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-setInterval(nextSlide, nextContentDelay);
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slideshow");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 
-function nextSlide() {
-    slideshowContent[currentSlide].style.display = 'none';
-    currentSlide = (currentSlide + 1) % slideshowContent.length;
-    slideshowContent[currentSlide].style.display = 'block';
+  setTimeout(showSlides, 2000);
 }
