@@ -13,6 +13,32 @@
   display: none;
 }
 
+/* Content for separate screen */
+.desktop-content {
+  display: none;
+}
+
+.mobile-content {
+  display: flex;
+  overflow: auto;
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+@media screen and (min-width: 1025px) {
+  .desktop-content {
+    display: block;
+  }
+
+  .mobile-content {
+    display: none;
+  }
+}
+/* Content for separate screen */
+
 .main-container {
   position: fixed;
   top: 0;
@@ -126,7 +152,11 @@ section:last-child {
 }
 
 .fw-thin {
-  font-weight: 400;
+  font-weight: 300;
+}
+
+.section-floating {
+  position: relative;
 }
 
 .our-team {
@@ -182,9 +212,26 @@ section:last-child {
   font-size: 130px;
 }
 
+@media screen and (max-width:1800px) {
+  .highlights-title {
+    top: 19%;
+  }
+}
+
+@media screen and (max-width:1599px) {
+  .highlights-title {
+    top: 15%;
+  }
+
+  .highlights-title p {
+    line-height: 80px;
+    font-size: 100px;
+  }
+}
+
 .dark-box-content.box-2 {
   width: 396px;
-  height: 230px;
+  min-height: 230px;
   margin: 5vw;
   padding: 62px 37px;
 }
@@ -196,4 +243,125 @@ section:last-child {
 
 .our-clients-content {
   width: 468px;
+}
+
+.projects-gallery {
+  width: fit-content;
+}
+
+.section-row {
+  display: flex;
+  height: 50vh;
+}
+
+.projects-gallery-item {
+  position: relative;
+  width: 65vh;
+  cursor: pointer;
+}
+
+.projects-gallery-item:hover>.projects-gallery-description {
+  opacity: 1;
+  transition: .5s;
+}
+
+.projects-gallery-description {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 175px;
+  height: 125px;
+  background-color: #575C49;
+  padding: 23px 18px;
+  opacity: 0.0;
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -ms-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.projects-gallery-description p {
+  color: white;
+  font-size: 8px;
+  margin-bottom: 10px;
+}
+
+.projects-gallery-description p:first-child {
+  color: white;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.projects-gallery-description a {
+  color: #949494;;
+}
+
+.projects-gallery-description a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-us {
+  width: 429px;
+  background-color: #1E1E1E;
+  border-bottom: 13px solid #D51F26;
+  padding: 20vh 80px 61px 61px;
+}
+
+.contact-us .content {
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+}
+
+.social a {
+  font-size: 12px;
+  color: white !important;
+  user-select: none;
+}
+
+.contact-info {
+  margin-bottom: 46px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: #D51F26;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  margin-bottom: 5px;
+}
+
+.info-title {
+  color: white !important;
+}
+
+/* Mobile style */
+@media screen and (max-width: 1025px) {
+  section {
+    margin: 0 !important;
+    width: 150vw;
+  }
+
+  .highlights,
+  .dark-box-content.box-1,
+  .about-us {
+    width: 100vw;
+  }
+
+  .dark-box-content.box-1,
+  .highlights-title {
+    bottom: 0;
+    left: 0;
+  }
+
+  .dark-box-content.box-1 {
+    min-height: 194px;
+  }
+
+  .highlights-title p {
+    font-size: 10px;
+  }
 }

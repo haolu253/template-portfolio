@@ -9,135 +9,302 @@
     <title>LEGO</title>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slideshow.css">
 </head>
 
 <body>
-    <div class="side-navbar d-flex flex-column justify-content-between">
-        <div class="top d-flex flex-column">
-            <img class="side-logo" src="./img/logo.png" alt="" srcset="">
-            <ul class="p-0 m-0">
-                <li><a href="#highlights">HIGHLIGHTS</a></li>
-                <li><a href="#about-us">ABOUT US</a></li>
-                <li><a href="#our-team">PORTFOLIO</a></li>
-                <li><a href="#contact-us">CONTACT</a></li>
-            </ul>
+    <!-- Desktop -->
+    <div class="desktop-content">
+        <div class="side-navbar d-flex flex-column justify-content-between">
+            <div class="top d-flex flex-column">
+                <img class="side-logo" src="./img/logo.png" alt="" srcset="">
+                <ul class="p-0 m-0">
+                    <li><a href="#highlights">HIGHLIGHTS</a></li>
+                    <li><a href="#about-us">ABOUT US</a></li>
+                    <li><a href="#our-team">PORTFOLIO</a></li>
+                    <li><a href="#contact-us">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <img src="./img/logo-footer.png" alt="" srcset="">
+                <p>18 Thanh Nien, Tay Ho District, Hanoi, Vietnam</p>
+                <br>80 Dong Khoi, District 1, </br>Ho Chi Minh City, Vietnam</p>
+            </div>
         </div>
-        <div class="footer">
-            <img src="./img/logo-footer.png" alt="" srcset="">
-            <p>18 Thanh Nien, Tay Ho District, Hanoi, Vietnam</p>
-            <br>80 Dong Khoi, District 1, </br>Ho Chi Minh City, Vietnam</p>
-        </div>
-    </div>
-    <div class="main-container">
-        <div class="sub-container">
-            <section id="highlights">
-                <img class="gallery" src="./img/1.png" alt="" srcset="">
-                <div class="highlights-title">
-                    <p class="fw-bold">INNOVATE</p>
-                    <p class="fw-thin">THE</p>
-                    <p class="fw-thin">VISION</p>
-                </div>
-                <div class="dark-box-content box-1">
-                    <div class="slideshow-container">
-                        <div class="slideshow">
-                            <div class="slide-content">
-                                <p class="fw-bold">Get your hands on the momentum - 1</p>
-                                <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                                    vitae posuere
-                                    libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac
-                                    mattis. Donec
-                                    consectetur orci non metus placerat, et porta massa cursus.</p>
+        <div class="main-container">
+            <div class="sub-container">
+                <section id="highlights">
+                    <img class="gallery" src="./img/1.png" alt="" srcset="">
+                    <div class="highlights-title">
+                        <p class="fw-bold">INNOVATE</p>
+                        <p class="fw-thin">THE</p>
+                        <p class="fw-thin">VISION</p>
+                    </div>
+                    <div class="dark-box-content box-1">
+                        <div class="slideshow-container">
+                            <div class="slideshow">
+                                <div class="slide-content">
+                                    <p class="fw-bold">Get your hands on the momentum - 1</p>
+                                    <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                        vitae posuere
+                                        libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac
+                                        mattis. Donec
+                                        consectetur orci non metus placerat, et porta massa cursus.</p>
+                                </div>
+                            </div>
+    
+                            <div class="slideshow">
+                                <div class="slide-content">
+                                    <p class="fw-bold">Get your hands on the momentum - 2</p>
+                                    <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                        vitae posuere
+                                        libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac
+                                        mattis. Donec
+                                        consectetur orci non metus placerat, et porta massa cursus.</p>
+                                </div>
+                            </div>
+    
+                            <div class="slideshow">
+                                <div class="slide-content">
+                                    <p class="fw-bold">Get your hands on the momentum - 3</p>
+                                    <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                        vitae posuere
+                                        libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac
+                                        mattis. Donec
+                                        consectetur orci non metus placerat, et porta massa cursus.</p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="slideshow">
-                            <div class="slide-content">
-                                <p class="fw-bold">Get your hands on the momentum - 2</p>
-                                <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                                    vitae posuere
-                                    libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac
-                                    mattis. Donec
-                                    consectetur orci non metus placerat, et porta massa cursus.</p>
+                        <div class="slidedot">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <img class="gallery" src="./img/2.png" alt="" srcset="">
+                </section>
+                <section>
+                    <img class="gallery" src="./img/3.png" alt="" srcset="">
+                </section>
+                <section>
+                    <img class="gallery" src="./img/4.png" alt="" srcset="">
+                </section>
+                <section class="about-us d-flex flex-column justify-content-start align-items-start" id="about-us">
+                    <h2 class="fw-bold">About us</h2>
+                    <p class="fw-bold mt-5">Get your hands on the momentum</p>
+                    <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere
+                        libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis. Donec
+                        consectetur orci non metus placerat, et porta massa cursus.</p>
+                    <p class="fw-bold mt-5">What we do</p>
+                    <p class="content mt-3">Text goes here</p>
+                    <p class="content">Text goes here</p>
+                    <p class="content">Text goes here</p>
+                </section>
+                <section>
+                    <img class="gallery" src="./img/5.png" alt="" srcset="">
+                </section>
+                <section class="our-team d-flex flex-column justify-content-end align-items-start" id="our-team">
+                    <img class="ourteam-logo" src="./img/ourteamlogo.png" alt="" srcset="">
+                    <h2 class="fw-bold">Our team</h2>
+                    <p class="fw-bold mt-5">Get your hands on the momentum</p>
+                    <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere
+                        libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis. Donec
+                        consectetur orci non metus placerat, et porta massa cursus.</p>
+                </section>
+                <section class="section-floating d-flex justify-content-end align-items-start">
+                    <img class="gallery" src="./img/6.png" alt="" srcset="">
+                    <div class="dark-box-content box-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere libero, a euismod nisi.
+                        Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis.
+                    </div>
+                </section>
+                <section class="our-clients d-flex flex-column justify-content-between align-items-start">
+                    <div class="our-clients-content">
+                        <h2 class="fw-bold">Our clients</h2>
+                        <p class="content mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere
+                            libero, a euismod nisi.</p>
+                    </div>
+                    <div class="w-100">
+                        <div class="row">
+                            <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
+                            <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
+                            <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
+                            <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
+                            <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="projects-gallery d-flex flex-column">
+                    <div class="section-row m-0 p-0">
+                        <div class="projects-gallery-item col-3 p-0 m-0">
+                            <img class="gallery" src="./img/5.png" alt="" srcset="">
+                            <div class="projects-gallery-description">
+                                <p class="fw-bold">Project's Name</p>
+                                <p class="fw-thin">Quo perspiciatis enim ut soluta animi eum galisum illo quo doloribus veniam qui.</p>
+                                <p><a href="#">See more</a></p>
                             </div>
                         </div>
-
-                        <div class="slideshow">
-                            <div class="slide-content">
-                                <p class="fw-bold">Get your hands on the momentum - 3</p>
-                                <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                                    vitae posuere
-                                    libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac
-                                    mattis. Donec
-                                    consectetur orci non metus placerat, et porta massa cursus.</p>
+                        <div class="projects-gallery-item col-3 p-0 m-0">
+                            <img class="gallery" src="./img/4.png" alt="" srcset="">
+                            <div class="projects-gallery-description">
+                                <p class="fw-bold">Project's Name</p>
+                                <p class="fw-thin">Quo perspiciatis enim ut soluta animi eum galisum illo quo doloribus veniam qui.</p>
+                                <p><a href="#">See more</a></p>
+                            </div>
+                        </div>
+                        <div class="projects-gallery-item col-3 p-0 m-0">
+                            <img class="gallery" src="./img/3.png" alt="" srcset="">
+                            <div class="projects-gallery-description">
+                                <p class="fw-bold">Project's Name</p>
+                                <p class="fw-thin">Quo perspiciatis enim ut soluta animi eum galisum illo quo doloribus veniam qui.</p>
+                                <p><a href="#">See more</a></p>
+                            </div>
+                        </div>
+                        <div class="projects-gallery-item col-3 p-0 m-0">
+                            <img class="gallery" src="./img/2.png" alt="" srcset="">
+                            <div class="projects-gallery-description">
+                                <p class="fw-bold">Project's Name</p>
+                                <p class="fw-thin">Quo perspiciatis enim ut soluta animi eum galisum illo quo doloribus veniam qui.</p>
+                                <p><a href="#">See more</a></p>
                             </div>
                         </div>
                     </div>
+                    <div class="section-row m-0 p-0">
+                        <div class="projects-gallery-item col-3 p-0 m-0">
+                            <img class="gallery" src="./img/2.png" alt="" srcset="">
+                            <div class="projects-gallery-description">
+                                <p class="fw-bold">Project's Name</p>
+                                <p class="fw-thin">Quo perspiciatis enim ut soluta animi eum galisum illo quo doloribus veniam qui.</p>
+                                <p><a href="#">See more</a></p>
+                            </div>
+                        </div>
+                        <div class="projects-gallery-item col-3 p-0 m-0">
+                            <img class="gallery" src="./img/3.png" alt="" srcset="">
+                            <div class="projects-gallery-description">
+                                <p class="fw-bold">Project's Name</p>
+                                <p class="fw-thin">Quo perspiciatis enim ut soluta animi eum galisum illo quo doloribus veniam qui.</p>
+                                <p><a href="#">See more</a></p>
+                            </div>
+                        </div>
+                        <div class="projects-gallery-item col-3 p-0 m-0">
+                            <img class="gallery" src="./img/6.png" alt="" srcset="">
+                            <div class="projects-gallery-description">
+                                <p class="fw-bold">Project's Name</p>
+                                <p class="fw-thin">Quo perspiciatis enim ut soluta animi eum galisum illo quo doloribus veniam qui.</p>
+                                <p><a href="#">See more</a></p>
+                            </div>
+                        </div>
+                        <div class="projects-gallery-item col-3 p-0 m-0">
+                            <img class="gallery" src="./img/1.png" alt="" srcset="">
+                            <div class="projects-gallery-description">
+                                <p class="fw-bold">Project's Name</p>
+                                <p class="fw-thin">Quo perspiciatis enim ut soluta animi eum galisum illo quo doloribus veniam qui.</p>
+                                <p><a href="#">See more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact-us d-flex flex-column justify-content-between align-items-start" id="contact-us">
+                    <div>
+                        <p class="content fw-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere
+                            libero, a euismod nisi.</p>
+                    </div>
+                    <div class="w-100">
+                        <div class="contact-info d-flex flex-column">
+                            <div class="d-flex">
+                                <p class="info-title mr-2">Tel</p><p>(+84) 999 888 777</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="info-title mr-2">Email</p><p>legovisual@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="social d-flex justify-content-between">
+                            <a href="#">Facebook</a>
+                            <a>|</a>
+                            <a href="#">Instagram</a>
+                            <a>|</a>
+                            <a href="#">Linkedin</a>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <img class="gallery" src="./img/7.png" alt="" srcset="">
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Desktop end -->
+    
+    <!-- Mobile and Tablet -->
+    <div class="mobile-content">
+        <section class="highlights" id="highlights">
+            <img class="gallery" src="./img/1.png" alt="" srcset="">
+            <div class="highlights-title">
+                <p class="fw-bold">INNOVATE</p>
+                <p class="fw-thin">THE</p>
+                <p class="fw-thin">VISION</p>
+            </div>
+            <div class="dark-box-content box-1">
+                <div class="slideshow-container">
                     <div class="slidedot">
                         <span class="dot" onclick="currentSlide(1)"></span>
                         <span class="dot" onclick="currentSlide(2)"></span>
                         <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
-                </div>
-            </section>
-            <section>
-                <img class="gallery" src="./img/2.png" alt="" srcset="">
-            </section>
-            <section>
-                <img class="gallery" src="./img/3.png" alt="" srcset="">
-            </section>
-            <section>
-                <img class="gallery" src="./img/4.png" alt="" srcset="">
-            </section>
-            <section class="about-us d-flex flex-column justify-content-start align-items-start" id="about-us">
-                <h2 class="fw-bold">About us</h2>
-                <p class="fw-bold mt-5">Get your hands on the momentum</p>
-                <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere
-                    libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis. Donec
-                    consectetur orci non metus placerat, et porta massa cursus.</p>
-                <p class="fw-bold mt-5">What we do</p>
-                <p class="content mt-3">Text goes here</p>
-                <p class="content">Text goes here</p>
-                <p class="content">Text goes here</p>
-            </section>
-            <section>
-                <img class="gallery" src="./img/5.png" alt="" srcset="">
-            </section>
-            <section class="our-team d-flex flex-column justify-content-end align-items-start" id="our-team">
-                <img class="ourteam-logo" src="./img/ourteamlogo.png" alt="" srcset="">
-                <h2 class="fw-bold">Our team</h2>
-                <p class="fw-bold mt-5">Get your hands on the momentum</p>
-                <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere
-                    libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis. Donec
-                    consectetur orci non metus placerat, et porta massa cursus.</p>
-            </section>
-            <section class="d-flex justify-content-end align-items-start">
-                <img class="gallery" src="./img/6.png" alt="" srcset="">
-                <div class="dark-box-content box-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere libero, a euismod nisi.
-                    Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis.
-                </div>
-            </section>
-            <section class="our-clients d-flex flex-column justify-content-between align-items-start">
-                <div class="our-clients-content">
-                    <h2 class="fw-bold">Our clients</h2>
-                    <p class="content mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere
-                        libero, a euismod nisi.</p>
-                </div>
-                <div class="w-100">
-                    <div class="row">
-                        <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
-                        <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
-                        <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
+                    <div class="slideshow">
+                        <div class="slide-content">
+                            <p class="fw-bold">Get your hands on the momentum - 1</p>
+                            <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                vitae posuere
+                                libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac
+                                mattis. Donec
+                                consectetur orci non metus placerat, et porta massa cursus.</p>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
-                        <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
-                        <div class="col-4"><img src="./img/logo-footer.png" alt="" srcset=""></div>
+
+                    <div class="slideshow">
+                        <div class="slide-content">
+                            <p class="fw-bold">Get your hands on the momentum - 2</p>
+                            <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                vitae posuere
+                                libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac
+                                mattis. Donec
+                                consectetur orci non metus placerat, et porta massa cursus.</p>
+                        </div>
+                    </div>
+
+                    <div class="slideshow">
+                        <div class="slide-content">
+                            <p class="fw-bold">Get your hands on the momentum - 3</p>
+                            <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                vitae posuere
+                                libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac
+                                mattis. Donec
+                                consectetur orci non metus placerat, et porta massa cursus.</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        <section class="about-us d-flex flex-column justify-content-start align-items-start" id="about-us">
+            <h2 class="fw-bold">About us</h2>
+            <p class="fw-bold mt-5">Get your hands on the momentum</p>
+            <p class="content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae posuere
+                libero, a euismod nisi. Suspendisse in sodales nulla. Quisque pulvinar vitae ex ac mattis. Donec
+                consectetur orci non metus placerat, et porta massa cursus.</p>
+            <p class="fw-bold mt-5">What we do</p>
+            <p class="content mt-3">Text goes here</p>
+            <p class="content">Text goes here</p>
+            <p class="content">Text goes here</p>
+        </section>
     </div>
+    <!-- Mobile and Tablet end -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
