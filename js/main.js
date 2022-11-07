@@ -27,10 +27,7 @@ function showSlides(n) {
 
 
 
-
-
-    for (let i = 0; i < 4; i++) {
-      var section1 = document.getElementById('highlights').getBoundingClientRect();
+var section1 = document.getElementById('highlights').getBoundingClientRect();
       var section2 = document.getElementById('about-us').getBoundingClientRect();
       var section3 = document.getElementById('our-team').getBoundingClientRect();
       var section4 = document.getElementById('contact-us').getBoundingClientRect();
@@ -39,5 +36,14 @@ function showSlides(n) {
       console.log(section2.top, section2.right, section2.bottom, section2.left);
       console.log(section3.top, section3.right, section3.bottom, section3.left);
       console.log(section4.top, section4.right, section4.bottom, section4.left);
+
+      
+
+    for (let i = 0; i < 4; i++) {
+      
+
+      
+
+     
       
     }
