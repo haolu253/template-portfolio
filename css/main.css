@@ -343,6 +343,12 @@ section:last-child {
 
 /* Mobile style */
 @media screen and (max-width: 1025px) {
+  .main-container {
+    width: 100vh;
+    height: 100vw;
+    overflow-x: scroll;
+  }
+
   section {
     margin: 0 !important;
     width: 180vw;
