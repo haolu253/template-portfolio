@@ -33,16 +33,18 @@ console.log(section1.top, section1.right, section1.bottom, section1.left);
 console.log(section2.top, section2.right, section2.bottom, section2.left);
 console.log(section3.top, section3.right, section3.bottom, section3.left);
 
-$('.main-container').on("scroll", function() {
+$('.main-container').on("scroll", function () {
   console.log($('.main-container').scrollTop());
   for (let i = 0; i < 4; i++) {
-    console.log("section"+i)
+    console.log("section" + i)
     if ($('.main-container').scrollTop() === 0) {
       $(".top ul li a").removeClass("active");
       $(".section0").addClass("active");
-    } else if ($('.main-container').scrollTop() === $("section"+i).left) {
+    } else if ($('.main-container').scrollTop() === $("section" + i).left) {
       $(".top ul li a").removeClass("active");
-      $(".section"+i).addClass("active");
+      $(".section" + i).addClass("active");
     }
   }
 })
+
+$('.main-container').css('width', window.innerHeight);
