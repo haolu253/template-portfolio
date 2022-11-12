@@ -347,7 +347,7 @@ section:last-child {
     width: 100vh;
     height: 100vw;
     overflow-x: scroll;
-    overflow-y: unset;
+    overflow-y: hidden;
     margin-left: 0;
   }
 
