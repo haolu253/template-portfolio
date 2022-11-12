@@ -48,3 +48,4 @@ $('.main-container').on("scroll", function () {
 })
 
 $('.main-container').css('width', window.innerHeight);
+$('body').css('height', window.innerHeight);
