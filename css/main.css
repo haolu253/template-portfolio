@@ -18,16 +18,6 @@
   display: none;
 }
 
-.mobile-content {
-  display: flex;
-  overflow: auto;
-  height: 100vh;
-  width: 100vw;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: end;
-  overflow-x: auto;
-}
 
 @media screen and (min-width: 1025px) {
   .desktop-content {
@@ -344,7 +334,6 @@ section:last-child {
 /* Mobile style */
 @media screen and (max-width: 1025px) {
   .main-container {
-    width: 100vh;
     height: 100vw;
     overflow-x: scroll;
     overflow-y: auto;
@@ -354,7 +343,7 @@ section:last-child {
   section {
     margin: 0 !important;
     width: 180vw;
-    height: 85vh;
+    height: 100%;
   }
 
   .highlights,
