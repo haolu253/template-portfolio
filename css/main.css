@@ -1,6 +1,8 @@
 :root {
     --viva-magenta: #BB2649;
     --viva-magenta-light: #DF617F;
+    --blue: #3E5374;
+    --deep-blue: #2F4858;
     --pure-black: #030303;
     --background: #1A1A1A;
     --light-black: #4D4D4D;
@@ -12,6 +14,12 @@
     color: var(--black);
     font-family: 'Itim', cursive;
     user-select: none;
+    color: var(--deep-blue);
+    text-align: center;
+}
+
+body {
+    padding: 0 !important;
 }
 
 ::-webkit-scrollbar {
@@ -34,11 +42,29 @@
 }
 
 .colored-text {
-    color: var(--viva-magenta);
+    color: var(--viva-magenta-light);
+}
+
+.pink-line {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pink-line div:first-of-type {
+    width: 10px;
+    height: 100%;
+}
+
+.pink-line div:last-of-type {
+    width: 60%;
+    height: 100%;
 }
 
 .text-highlight {
-    border-bottom: 2px solid var(--viva-magenta);
+    border-bottom: 4px solid var(--viva-magenta-light);
 }
 
 .fullscreen {
@@ -48,5 +74,57 @@
 }
 
 .bg-viva {
-    background-color: var(--viva-magenta);
+    background-color: var(--viva-magenta-light);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.my-img {
+    width: 100%;
+    height: calc(100vh/2);
+}
+
+.my-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hello div {
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 10px solid var(--viva-magenta-light);
+    line-height: 40px;
+    text-align: center;
+}
+
+.about div {
+    width: 100%;
+    height: 100vw;
+}
+
+.work img {
+    width: auto;
+    height: 50px;
+    margin: 10px;
+}
+
+.experience div,
+.experience div p {
+    color: var(--white);
+    width: 100%;
+}
+
+.experience img {
+    width: 50px;
+    height: 50px;
+    margin: 16px;
+    margin-bottom: 0;
 }
