@@ -22,6 +22,15 @@ body {
     padding: 0 !important;
 }
 
+@media screen and (min-width: 768px) {
+    .web-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 ::-webkit-scrollbar {
     background-color: var(--light-black);
     width: 12px;
@@ -73,6 +82,12 @@ body {
     text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+    .fullscreen {
+        width: 1100px;
+    }
+}
+
 .bg-viva {
     background-color: var(--viva-magenta-light);
 }
@@ -107,13 +122,41 @@ body {
 
 .about div {
     width: 100%;
-    height: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        width: 1100px;
+    }
 }
 
 .work img {
     width: auto;
     height: 50px;
     margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .work h3 {
+        margin-bottom: 35px;
+    }
+
+    .worked-company {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1100px;
+    }
+
+    .worked-company div {
+        opacity: .5;
+        cursor: pointer;
+    }
+
+    .worked-company div:hover {
+        transition: .5s;
+        opacity: 1;
+    }
 }
 
 .experience div,
@@ -127,4 +170,13 @@ body {
     height: 50px;
     margin: 16px;
     margin-bottom: 0;
+}
+
+.experience div {
+    cursor: pointer;
+}
+
+.experience div:hover {
+    transition: .5s;
+    background-color: var(--viva-magenta);
 }
