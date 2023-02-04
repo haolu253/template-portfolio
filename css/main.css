@@ -22,6 +22,25 @@ body {
     padding: 0 !important;
 }
 
+.text-dance {
+    animation: dance 3s infinite;
+    transition: .5s;
+}
+
+@keyframes dance {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .web-wrapper {
         display: flex;
@@ -67,6 +86,12 @@ body {
     height: 100%;
 }
 
+@media screen and (min-width: 768px) {
+    .pink-line div:first-of-type {
+        width: 10%;
+    }
+}
+
 .pink-line div:last-of-type {
     width: 60%;
     height: 100%;
@@ -110,7 +135,7 @@ body {
     max-height: 100%;
 }
 
-.hello div {
+.hello .border-box {
     width: 150px;
     height: 150px;
     font-size: 30px;
