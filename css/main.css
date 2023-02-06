@@ -22,6 +22,10 @@ body {
     padding: 0 !important;
 }
 
+p {
+    font-size: 16px;
+}
+
 .text-dance {
     animation: dance 3s infinite;
     transition: .5s;
