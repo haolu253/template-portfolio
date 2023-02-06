@@ -107,9 +107,23 @@ body {
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
     .fullscreen {
-        width: 1100px;
+        max-width: 1100px;
+        position: relative;
+    }
+
+    .fullscreen .bg-viva {
+        justify-content: flex-end !important;
+        padding: 50px !important;
+    }
+
+    .fullscreen .title {
+        position: absolute;
+        top: 4%;
+        padding: 20px;
+        width: 35%;
+        height: 35%;
     }
 }
 
@@ -128,6 +142,15 @@ body {
 .my-img {
     width: 100%;
     height: calc(100vh/2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media screen and (min-width: 1025px) {
+    .my-img {
+        height: 80%;
+    }
 }
 
 .my-img img {
@@ -151,8 +174,19 @@ body {
 
 @media screen and (min-width: 768px) {
     .about {
-        width: 1100px;
+        max-width: 1100px;
     }
+}
+
+.certi-edu div {
+    background-color: var(--viva-magenta-light);
+    color: var(--white);
+    padding: 40px;
+    text-align: center;
+}
+
+.certi-edu p {
+    color: var(--white);
 }
 
 .work img {
@@ -170,17 +204,17 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1100px;
+        max-width: 1100px;
         gap: 150px;
     }
 
     .worked-company div {
         opacity: .5;
         cursor: pointer;
+        transition: .5s;
     }
 
     .worked-company div:hover {
-        transition: .5s;
         opacity: 1;
     }
 }
@@ -214,7 +248,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .experience {
-        width: 1100px;
+        max-width: 1100px;
     }
 
     .experience .skills {
