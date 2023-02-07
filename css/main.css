@@ -32,25 +32,6 @@ p {
     font-size: 16px;
 }
 
-.text-dance {
-    animation: dance 3s infinite;
-    transition: .5s;
-}
-
-@keyframes dance {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(.7);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
 @media screen and (min-width: 768px) {
     .web-wrapper {
         display: flex;
@@ -252,6 +233,10 @@ p {
     color: var(--viva-magenta-light);
 }
 
+.certi-edu {
+    max-width: 1100px;
+}
+
 .certi-edu div {
     background-color: var(--viva-magenta-light);
     color: var(--white);
@@ -351,13 +336,37 @@ p {
     object-fit: contain;
 }
 
-.project-1 .title {
+.project-1 .title,
+.project-2 .title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--white);
     padding: 50px 0;
+}
+
+.project-1 .title h3,
+.project-2 .title h3  {
+    font-size: 24px;
+}
+
+.project-1 .intro,
+.project-2 .intro {
+    position: relative;
+}
+
+.project-2 .title {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description p:first-of-type {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -368,14 +377,6 @@ p {
     .description {
         margin: 20px !important;
     }
-}
-
-.project-1 .title h3 {
-    font-size: 24px;
-}
-
-.project-1 .intro {
-    position: relative;
 }
 
 .small-square {
@@ -394,6 +395,7 @@ p {
     font-size: 18px;
     cursor: pointer;
     color: transparent;
+    transition: .5s;
 }
 
 .copy-right p {
