@@ -18,6 +18,12 @@
     text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+    * {
+        overflow-x: hidden;
+    }
+}
+
 body {
     padding: 0 !important;
 }
@@ -57,6 +63,12 @@ p {
 ::-webkit-scrollbar {
     background-color: var(--blue);
     width: 12px;
+}
+
+@media screen and (max-width: 767px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 ::-webkit-scrollbar-thumb {
@@ -111,6 +123,38 @@ p {
     text-align: center;
 }
 
+.quote {
+    color: var(--white);
+    font-size: 16px;
+    padding-left: 40%;
+    padding-bottom: 30px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1024px) {
+    .quote {
+        position: absolute;
+        top: 0;
+        padding: 15%;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .quote {
+        position: absolute;
+        top: 0;
+        padding: 20px;
+        margin: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        font-size: 11px;
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 1025px) {
     .fullscreen {
         max-width: 1100px;
@@ -162,6 +206,12 @@ p {
     max-height: 100%;
 }
 
+.hello p {
+    font-size: 13px;
+    margin: 0;
+    color: var(--viva-magenta-light);
+}
+
 .hello .border-box {
     width: 150px;
     height: 150px;
@@ -180,6 +230,26 @@ p {
     .about {
         max-width: 1100px;
     }
+}
+
+.contact {
+    max-width: 1100px;
+}
+
+.contact-info {
+    gap: 30px;
+}
+
+.contact-info svg {
+    transition: .5s;
+}
+
+.contact-info svg:hover {
+    transform: scale(1.2);
+}
+
+.contact-info svg:hover path {
+    color: var(--viva-magenta-light);
 }
 
 .certi-edu div {
@@ -265,4 +335,67 @@ p {
     .skill {
         margin: 0 !important;
     }
+}
+
+.projects {
+    max-width: 1100px;
+}
+
+.project-1 .intro div {
+    width: 50%;
+}
+
+.project-1 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.project-1 .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 50px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .project-1 .title {
+        padding: 0;
+    }
+
+    .description {
+        margin: 20px !important;
+    }
+}
+
+.project-1 .title h3 {
+    font-size: 24px;
+}
+
+.project-1 .intro {
+    position: relative;
+}
+
+.small-square {
+    width: 20px;
+    height: 20px;
+    background-color: var(--viva-magenta-light);
+    margin: 20px auto 50px auto;
+}
+
+.copy-right p:hover + a {
+    color: var(--viva-magenta-light);
+}
+
+.copy-right a {
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.copy-right p {
+    cursor: pointer;
 }
