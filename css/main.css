@@ -1,221 +1,58 @@
 :root {
-    --viva-magenta: #BB2649;
-    --viva-magenta-light: #DF617F;
-    --blue: #3E5374;
-    --deep-blue: #2F4858;
-    --pure-black: #030303;
-    --background: #1A1A1A;
-    --light-black: #4D4D4D;
-    --black: #333333;
+    --primary-color: #DDD48F50;
+    --primary-color-sub: #6B8C21;
+
+    --secondary-color: #704012;
+    --secondary-color-sub: #CDA989;
+
     --white: #FEFEFE;
 }
 
-* {
-    color: var(--black);
-    font-family: 'Montserrat', sans-serif;
-    user-select: none;
-    color: var(--deep-blue);
-    text-align: center;
-}
-
-@media screen and (max-width: 767px) {
-    * {
-        overflow-x: hidden;
-    }
+::selection {
+    color: var(--secondary-color-sub);
+    background-color: var(--primary-color-sub);
 }
 
 body {
     padding: 0 !important;
 }
 
-p {
-    font-size: 16px;
+.web-wrapper {
+    color: var(--secondary-color);
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0 20px;
 }
 
-@media screen and (min-width: 768px) {
-    .web-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+/* About */
+.about {
+    background-color: var(--primary-color);
+    padding: 50px 20px;
+    min-height: 400px;
 }
 
-::-webkit-scrollbar {
-    background-color: var(--blue);
-    width: 12px;
+.about p {
+    max-width: 700px;
 }
 
-@media screen and (max-width: 767px) {
-    ::-webkit-scrollbar {
-        display: none;
-    }
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--viva-magenta-light);
-    box-shadow: inset 0 0 6px #0000004d;
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--blue);
-    box-shadow: inset 0 0 6px #0000004d;
-}
-
-::-webkit-scrollbar-track-piece {
-    background-color: var(--blue);
-}
-
-.colored-text {
-    color: var(--viva-magenta-light);
-}
-
-.pink-line {
-    width: 100%;
-    height: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.pink-line div:first-of-type {
-    width: 10px;
-    height: 100%;
-}
-
-@media screen and (min-width: 768px) {
-    .pink-line div:first-of-type {
-        width: 10%;
-    }
-}
-
-.pink-line div:last-of-type {
-    width: 60%;
-    height: 100%;
-}
-
-.text-highlight {
-    border-bottom: 4px solid var(--viva-magenta-light);
-}
-
-.fullscreen {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-}
-
-.quote {
-    color: var(--white);
-    font-size: 16px;
-    padding-left: 40%;
-    padding-bottom: 30px;
-    font-style: italic;
-}
-
-@media screen and (max-width: 1024px) {
-    .quote {
-        position: absolute;
-        top: 0;
-        padding: 15%;
-        text-align: center;
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .quote {
-        position: absolute;
-        top: 0;
-        padding: 20px;
-        margin: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        text-align: center;
-        font-size: 11px;
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .fullscreen {
-        max-width: 1100px;
-        position: relative;
-    }
-
-    .fullscreen .bg-viva {
-        justify-content: flex-end !important;
-        padding: 50px !important;
-    }
-
-    .fullscreen .title {
-        position: absolute;
-        top: 4%;
-        padding: 20px;
-        width: 35%;
-        height: 35%;
-    }
-}
-
-.bg-viva {
-    background-color: var(--viva-magenta-light);
-}
-
-.bg-blue {
-    background-color: var(--blue);
-}
-
-.bg-white {
-    background-color: var(--white);
-}
-
-.my-img {
-    width: 100%;
-    height: calc(100vh/2);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-@media screen and (min-width: 1025px) {
-    .my-img {
-        height: 80%;
-    }
-}
-
-.my-img img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.hello p {
-    font-size: 13px;
-    margin: 0;
-    color: var(--viva-magenta-light);
-}
-
-.hello .border-box {
+/* Contact */
+.border-box {
     width: 150px;
     height: 150px;
     font-size: 30px;
     font-weight: bold;
-    border: 10px solid var(--viva-magenta-light);
+    border: 4px solid var(--secondary-color);
     line-height: 40px;
     text-align: center;
-}
-
-.about div {
-    width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-    .about {
-        max-width: 1100px;
-    }
 }
 
 .contact {
     max-width: 1100px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .contact-info {
@@ -230,199 +67,15 @@ p {
     transform: scale(1.2);
 }
 
-.contact-info svg:hover path {
-    color: var(--viva-magenta-light);
-}
-
-.certi-edu {
-    max-width: 1100px;
-}
-
-.certi-edu div {
-    background-color: var(--viva-magenta-light);
-    color: var(--white);
-    padding: 40px;
-    text-align: center;
-}
-
-.certi-edu p {
-    color: var(--white);
-}
-
-.work img {
-    width: auto;
-    height: 50px;
-    margin: 10px;
-}
-
-@media screen and (min-width: 768px) {
-    .work h3 {
-        margin-bottom: 35px;
-    }
-
-    .worked-company {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 1100px;
-        gap: 150px;
-    }
-
-    .worked-company div {
-        opacity: .5;
-        cursor: pointer;
-        transition: .5s;
-    }
-
-    .worked-company div:hover {
-        opacity: 1;
-    }
-}
-
-.experience .skill,
-.experience .skill p {
-    color: var(--white);
-    width: 100%;
-}
-
-.experience .skills {
-    width: 100%;
-}
-
-.experience img {
-    width: 50px;
-    height: 50px;
-    margin: 16px;
-    margin-bottom: 0;
-}
-
-.experience .skill {
-    cursor: pointer;
-    padding: 10px;
-}
-
-.experience .skill:hover {
-    transition: .5s;
-    background-color: var(--viva-magenta);
-}
-
-@media screen and (min-width: 768px) {
-    .experience {
-        max-width: 1100px;
-    }
-
-    .experience .skills {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .skill {
-        margin: 0 !important;
-    }
-}
-
-.projects {
-    max-width: 1100px;
-}
-
-.project-1 .intro div {
-    width: 50%;
-}
-
-.project-1 img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.project-1 .title,
-.project-2 .title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--white);
-    padding: 50px 0;
-}
-
-.project-1 .title h3,
-.project-2 .title h3,
-.project-3 .title h3  {
-    font-size: 24px;
-}
-
-.project-1 .intro,
-.project-2 .intro,
-.project-3 .intro {
-    position: relative;
-}
-
-.project-2 .title {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-    .project-2 .title {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-.project-3 .title {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 300px;
-    height: 300px;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-    .project-3 .title {
-        width: 150px;
-        height: 120px;
-    }
-}
-
-.project-3 .intro {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.project-3 img {
-    max-width: 1068px;
-    width: 100%;
-}
-
-.description p:first-of-type {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-@media screen and (max-width: 767px) {
-    .project-1 .title {
-        padding: 0;
-    }
-}
-
 .small-square {
     width: 20px;
     height: 20px;
-    background-color: var(--viva-magenta-light);
+    background-color: var(--secondary-color);
     margin: 20px auto 50px auto;
 }
 
 .copy-right p:hover + a {
-    color: var(--viva-magenta-light);
+    color: var(--secondary-color);
 }
 
 .copy-right a {
@@ -431,6 +84,11 @@ p {
     cursor: pointer;
     color: transparent;
     transition: .5s;
+}
+
+.copy-right a:hover {
+    color: var(--secondary-color-sub);
+    text-decoration: none;
 }
 
 .copy-right p {
